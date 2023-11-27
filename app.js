@@ -113,14 +113,15 @@ details_btn.addEventListener('click', function () {
     setTimeout(() => {
       this.innerHTML = '<svg width="40" height="40" viewBox="0 0 30 30" fill="ffff" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#303030"></circle><path d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z" fill="#ffff"></path></svg>';
     }, 200);
+    updateProgressBar(20)
   } else {
     setTimeout(() => {
       this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 35 35" fill="none"><circle cx="16" cy="16" r="12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" /></svg>';
     }, 200);
+    updateProgressBar(-20)
   }
 
   clickCount = (clickCount + 1) % 2;
-  updateProgressBar() 
 });
 
 const details_btn1 = document.getElementById('svg1');
@@ -133,10 +134,12 @@ details_btn1.addEventListener('click', function () {
     setTimeout(() => {
       this.innerHTML = '<svg width="40" height="40" viewBox="0 0 30 30" fill="ffff" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#303030"></circle><path d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z" fill="#ffff"></path></svg>';
     }, 200);
+    updateProgressBar(20)
   } else {
     setTimeout(() => {
       this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 35 35" fill="none"><circle cx="16" cy="16" r="12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" /></svg>';
     }, 200);
+    updateProgressBar(-20)
   }
 
   clickCount1 = (clickCount1 + 1) % 2;
@@ -152,10 +155,12 @@ details_btn2.addEventListener('click', function () {
     setTimeout(() => {
       this.innerHTML = '<svg width="40" height="40" viewBox="0 0 30 30" fill="ffff" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#303030"></circle><path d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z" fill="#ffff"></path></svg>';
     }, 200);
+    updateProgressBar(20)
   } else {
     setTimeout(() => {
       this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 35 35" fill="none"><circle cx="16" cy="16" r="12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" /></svg>';
     }, 200);
+    updateProgressBar(-20)
   }
 
   clickCount2 = (clickCount2 + 1) % 2;
@@ -171,10 +176,12 @@ details_btn3.addEventListener('click', function () {
     setTimeout(() => {
       this.innerHTML = '<svg width="40" height="40" viewBox="0 0 30 30" fill="ffff" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#303030"></circle><path d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z" fill="#ffff"></path></svg>';
     }, 200);
+    updateProgressBar(20)
   } else {
     setTimeout(() => {
       this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 35 35" fill="none"><circle cx="16" cy="16" r="12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" /></svg>';
     }, 200);
+    updateProgressBar(-20)
   }
 
   clickCount3 = (clickCount3 + 1) % 2;
@@ -190,36 +197,45 @@ details_btn4.addEventListener('click', function () {
     setTimeout(() => {
       this.innerHTML = '<svg width="40" height="40" viewBox="0 0 30 30" fill="ffff" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#303030"></circle><path d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z" fill="#ffff"></path></svg>';
     }, 200);
+    updateProgressBar(20);
   } else {
     setTimeout(() => {
       this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 35 35" fill="none"><circle cx="16" cy="16" r="12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" /></svg>';
     }, 200);
+    updateProgressBar(-20);
   }
 
-  clickCount4 = (clickCount4 + 1) % 2;
+  clickCount4 = (clickCount4 + 1) % 2; 
 });
 
 const progressBar = document.querySelector('.progress');
 
-  function updateProgressBar() {
-    const maxClicks = 5;
+function updateProgressBar(increment) {
+  let currentWidth = parseFloat(progressBar.style.width) || 0;
+  let newWidth = Math.min(100, Math.max(0, currentWidth + increment));
+  progressBar.style.width = newWidth + '%';
+}
 
-    if (clickCount5 < maxClicks) {
-      const progressPercentage = (clickCount5 / maxClicks) * 100;
-      progressBar.style.width = `${20}%`;
+const nav_wrap = document.querySelector('navbar-wrapper')
+const nav_items = nav_items.children
+const list_section = document.querySelector('.listSection')
+const list_items = list_section.children
+let active = -1
 
-      if (clickCount5 === maxClicks - 1) {
-        alert('Progress is full!');
-      } else {
-        for (let i = maxClicks - 1; i >= 0; i--) {
-          setTimeout(() => {
-            const progressPercentage = (i / maxClicks) * 100;
-            progressBar.style.width = `${25}%`;
-          }, (maxClicks - i - 1) * 200);
+document.addEventListener('keydown', (e) => {
+    if (e.keyCode == 40) {  // ArrowDown
+        if (active < list_items.length - 1) {
+            active++
+            list_items[active].focus()
+            nav_items[active].focus()
         }
-      }
-      
+    } else if (e.keyCode == 38) {  // ArrowUp
+        if (active > 0) {
+            active--
+            list_items[active].focus()
+            nav_items[active].focus()
+    } else if (e.keyCode == 13) {
+        emblem.classList.toggle('display')
     }
-
-    clickCount = (clickCount5 + 1) % (maxClicks + 1);
   }
+})

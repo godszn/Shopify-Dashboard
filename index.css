@@ -54,6 +54,11 @@ body {
   border: 1px solid var(--stroke-s-100, #E1E1E1);
 }
 
+
+.searchbar:focus {
+  outline: 2px solid #005BD3 !important;
+}
+
 .searchbar-inputfield::placeholder {
     color:#B5B5B5 ;
     font-size: 13px;
@@ -72,12 +77,18 @@ body {
     align-items: center;
     display: flex;
     transition: all .5s ease-in-out;
+    outline: 2px solid transparent;
     cursor: pointer;
 }
 
 .notif-widget:hover {
   background-color: #616161;
  transition: all .5s ease-in-out;
+
+}
+
+.notif-widget:focus {
+  outline: 2px solid #005BD3;
 }
 
 .notif-widget svg {
@@ -113,6 +124,12 @@ body {
     background-color:#36FBA1;
     border-radius: .2rem;
     margin-left: .3rem;
+    transition: all .5s ease-in-out;
+    outline: 2px solid transparent;
+}
+
+.emblem:focus {
+  outline: 2px solid #005BD3;
 }
 
 .emblem h5 {
@@ -186,6 +203,10 @@ body {
   padding: .5rem;
 }
 
+.store:focus {
+  outline: 1px solid #005BD3;
+}
+
 .store:hover {
   background-color:#F1F1F1 ;
 }
@@ -209,6 +230,10 @@ body {
   cursor: pointer;
 }
 
+.listSection li:focus {
+  outline: 1px solid #005BD3;
+}
+
 .listSection li:hover {
   background-color:#F0F0F0 ;
 }
@@ -221,6 +246,10 @@ body {
   padding: .6rem;
 }
 
+.mail:focus {
+  outline: 1px solid #005BD3;
+}
+
 .mail p {
   font-size: small;
   color: #616161;
@@ -230,12 +259,31 @@ body {
   display: block;
 }
 
+.plan-btn:focus {
+  outline: 2px solid #005BD3;
+}
+
+.plan-btn:hover {
+  border-top: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+  border-right: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+  border-left: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
+  background: #404040;
+  color: white !important;
+}
+
 .cancel1 {
   display: flex;
   align-items: center;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    cursor: pointer;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  cursor: pointer;
+  border-radius: .3rem;
+  outline: 2px solid transparent;
+  transition: all .5s ease-in-out;
+}
+
+.cancel1:focus {
+  outline: 2px solid #005BD3;
 }
 
 .cancel1 svg{
@@ -254,6 +302,10 @@ body {
   margin: .4rem;
   border-radius: .4rem;
   cursor: pointer;
+}
+
+.footerSection li:focus {
+  outline: 2px solid #005BD3;
 }
 
 .footerSection li:hover {
@@ -339,12 +391,17 @@ body {
 }
 
 .plan-btn {
-    background-color: white;
     padding: .5rem;
-    border-radius: 6px;
     align-items: center;
     display: flex;
     margin-right: 1rem;
+    outline: 2px solid transparent;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: var(--White, #FFF);
+    box-shadow: 0px -1px 0px 0px #B5B5B5 inset;
 }
 .play {
   display: none !important;
@@ -364,8 +421,20 @@ body {
     padding-right: .5rem;
 }
 
+.product {
+  display: inline-flex;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 8px;
+  margin-left: .5rem;
+}
+
+.product:hover {
+  border-radius: 6px;
+  background: #E7E7E7;
+}
+
 .plan-btn a{
-    color: black;
     font-weight: 600;
     font-size: smaller;
 }
@@ -416,8 +485,15 @@ body {
     cursor: pointer;
   }
 
-  #setup-dropdown :hover {
-   background-color: #B5B5B5;
+  .setup-svg:focus {
+    outline: 2px solid #005BD3;
+  }
+
+  .setup-svg:hover {
+    background-color: #B5B5B5;
+  }
+
+  #setup-dropdown:hover {
    transition: all .5s ease-in-out;
   }
 
@@ -500,6 +576,17 @@ body {
     border-left: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.20));
     background: #404040;
     box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333, 0px 2px 0px 0px #000;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+
+  .button:hover {
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: var(--White, #FFF);
+    box-shadow: 0px -1px 0px 0px #B5B5B5 inset;
+    color: black;
+    transition: all .5s ease-in-out;
   }
 
 
@@ -548,20 +635,27 @@ body {
     margin-left: 1rem;
   }
 
+  .radar-container {
+    align-items: center;
+  }
+
   .progress-bar {
-    width: 200px;
-    height: 20px;
+    width: 100px;
+    height: 5px;
     background-color: #f0f0f0;
-    margin: 20px 0;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
   }
 
   .progress {
     height: 100%;
     width: 0;
-    background-color: #4caf50;
+    background-color: black;
     text-align: center;
     line-height: 20px;
     color: white;
+    border-radius: 1.5rem;
+    transition: all .5s ease-in-out;
   }
 
   .show {
@@ -585,10 +679,18 @@ body {
       width: 238px;
     }
 
+    .searchbar:focus {
+      outline: 3px solid #005BD3 !important;
+    }
+
     .notif-widget {
       background-color: transparent;
       padding: 0;
       margin-left: .5rem;
+    }
+
+    .notif-widget:focus {
+      outline: 2px solid #005BD3;
     }
 
     .user h6 {
